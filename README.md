@@ -1,35 +1,18 @@
+## **LIVEPOINT**
+
 LIVEPOINT enables Fully Decentralized, Safe, Deadlock-Free Multi-Robot Control in Cluttered Environments with High-Dimensional Inputs.
 
-Usage:
+Read our [paper](https://arxiv.org/pdf/2503.13098) or visit our [website](https://livepoint-uva.github.io/) for more information.
 
-The simulation script can be found at depth_cbf/qrotor_sim_examples/nb_run_qrotor_3d_simulation.ipynb.
+## **Set Up**
 
-Setup:
+- Python 3.11.9 Recommended
+- pip install calsim, scipy, osqp, casadi, cvxpy, control, plotly, nbformat, pyyaml, k3d, imageio, pyautogui
+- Overwrite the base CalSim library code with the CalSim folder provided in this repository
 
-Python 3.11.9 Recommended
+To run, either run the python script or the python notebook:
+- depth_cbf/qrotor_sim/nb_run_qrotor_3d_simulation.ipynb (Recommended)
+- depth_cbf/qrotor_sim/nb_run_qrotor_3d_simulation.py
 
--pip install Calsim
 
--pip install scipy
 
--pip install osqp
-
--pip install casadi
-
--pip install cvxpy
-
--pip install control
-
--pip install plotly
-
--pip install nbformat
-
--pip install pyyaml
-
--pip install k3d
-
--pip install imageio
-
--pip install pyautogui
-
--Overwrite the base Calsim library code with the Calsim folder provided in this repository
