@@ -1,0 +1,54 @@
+# config.yaml
+#INTERSECTION
+numRobots: 2
+
+# Initial positions for the two robots
+# Opening Scenario
+pos0: [0, -1, 0]
+pos1: [-1, 0, 0]
+
+# Obstacle configuration
+numObs: 12
+orig_qObs:
+  - [-0.5, -1, 0]
+  - [-0.5, -0.5, 0]
+  - [-0.5, 0.5, 0]
+  - [-0.5, 1, 0]
+  - [0.5, -1, 0]
+  - [0.5, -0.5, 0]
+  - [0.5, 0.5, 0]
+  - [0.5, 1, 0]
+  - [-1, -0.5, 0]
+  - [1, -0.5, 0]
+  - [-1, 0.5, 0]
+  - [1, 0.5, 0]
+
+orig_rObs: [0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25]
+rObs: 0.1
+rObs1: 0.1
+
+# Desired destinations for each robot
+
+#Opening Scenario
+xD: [0, 1, 0]
+xD1: [1, 0, 0]
+
+#Delta value
+delta: 0.1
+
+#Threshold for active set
+active_h_threshold: 0
+
+#Deadlock Detetction?
+liveness: True
+
+#Restrict z?
+restrict_z: True
+
+#Remove robot when it gets close to its destination?
+remove_after_arriving: True
+arrive_threshold: 0.1
+
+#get velocity metrics?
+velocity_metrics: False
+

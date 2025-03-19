@@ -1,0 +1,48 @@
+# config.yaml
+#DOORWAY
+numRobots: 2
+
+# Initial positions for the two robots
+# Opening Scenario
+pos0: [0.25, 0, 0]
+pos1: [0.75, 0, 0]
+
+
+# Obstacle configuration
+numObs: 6
+orig_qObs:
+  - [0.1, 2, 0]
+  - [0.9, 2, 0]
+  - [-0.4, 2, 0]
+  - [-0.9, 2, 0]
+  - [1.4, 2, 0]
+  - [1.9, 2, 0]
+
+orig_rObs: [0.25,0.25,0.25,0.25,0.25,0.25]
+rObs: 0.1
+rObs1: 0.1
+
+# Desired destinations for each robot
+
+#Opening Scenario
+xD: [0.5, 3, 0]
+xD1: [0.5, 3, 0]
+
+#Delta value
+delta: 0.1
+
+#Threshold for active set
+active_h_threshold: 0
+
+#Deadlock Detetction?
+liveness: True
+
+#Restrict z?
+restrict_z: True
+
+#Remove robot when it gets close to its destination?
+remove_after_arriving: True
+arrive_threshold: 0.1
+
+#get velocity metrics?
+velocity_metrics: False
